@@ -19,7 +19,7 @@ public class ZipTextParsingTest {
 
             while ((entry = zis.getNextEntry()) != null) {
 
-                assertThat(entry.getName().contains("12312312eaeqwsample.text"));
+            assertThat(entry.getName()).contains("sample.text");
 
             }
 
